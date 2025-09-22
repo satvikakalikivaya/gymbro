@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitZone Gym</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #fff;
+      color: #333;
+    }
+
+    header {
+      background-color: #ff69b4;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+    }
+
+    nav {
+      background-color: white;
+      text-align: center;
+      padding: 10px 0;
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #ff69b4;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 40px 20px;
+      background: linear-gradient(to right, #ffb6c1, #ffe4e1);
+    }
+
+    .hero img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-top: 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+      color: #ff1493;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      color: #444;
+      max-width: 600px;
+    }
+
+    .cta-button {
+      margin-top: 20px;
+      padding: 15px 30px;
+      background-color: #ff1493;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .cta-button:hover {
+      background-color: #e60073;
+    }
+
+    .section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .features, .trainers {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background-color: #fff0f5;
+      border: 2px solid #ffc0cb;
+      border-radius: 10px;
+      padding: 20px;
+      width: 250px;
+    }
+
+    .card img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    form {
+      background-color: #ffe4e1;
+      padding: 30px;
+      border-radius: 10px;
+      max-width: 500px;
+      margin: auto;
+    }
+
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ff69b4;
+      border-radius: 5px;
+    }
+
+    form button {
+      background-color: #ff69b4;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      background-color: #ff69b4;
+      color: white;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FitZone Gym</h1>
+    <p>Unleash Your Inner Strength!</p>
+  </header>
+
+  <nav>
+    <a href="#features">Features</a>
+    <a href="#trainers">Trainers</a>
+    <a href="#contact">Join Us</a>
+  </nav>
+
+  <section class="hero">
+    <h2>Get Fit, Feel Amazing</h2>
+    <p>Join the most vibrant fitness community. Modern equipment, expert trainers, and supportive vibes!</p>
+    <button class="cta-button">Join Now</button>
+    <img src="https://images.unsplash.com/photo-1571019613578-2b9b6d13794a" alt="Gym Image">
+  </section>
+
+  <section class="section" id="features">
+    <h2>Why Choose FitZone?</h2>
+    <div class="features">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583454110551-21b933d4e0dc" alt="Weights">
+        <h3>Modern Equipment</h3>
+        <p>Top-of-the-line machines for every fitness goal.</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1579758629936-035b8aaeee33" alt="Group Class">
+        <h3>Group Classes</h3>
+        <p>Zumba, HIIT, Yoga, and more – fun and effective!</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583454110551-21b933d4e0dc" alt="Support">
+        <h3>Personal Training</h3>
+        <p>One-on-one coaching tailored to your needs.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="trainers">
+    <h2>Meet Our Trainers</h2>
+    <div class="trainers">
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1598970434795-0c54fe7c0642" alt="Trainer 1">
+        <h3>Emily</h3>
+        <p>Strength coach & female fitness specialist</p>
+      </div>
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571019613915-77f8f3d5f79e" alt="Trainer 2">
+        <h3>Jason</h3>
+        <p>Certified HIIT & transformation expert</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="contact">
+    <h2>Join FitZone Today</h2>
+    <p>Fill in your details and we'll get back to you.</p>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Message or goals..." rows="4"></textarea>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 FitZone Gym. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
